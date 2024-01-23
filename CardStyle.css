@@ -17,9 +17,9 @@ body{
 
 .profile-Card{
     position: relative;
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
-    border-radius: 24px;
+    border-radius: 24px;    
     background: #fff;
     /* background: #333; */
     box-shadow: 0 3px 20px lightgray;
@@ -62,9 +62,8 @@ body{
     text-align: center;
     margin-top: 55px;
     /* color: #f4f4f4; */
-    
-
 }
+
 .text-data .name{
     font-size: 24px;
     font-weight: 550;
@@ -103,7 +102,6 @@ body{
 }
 
 .media-Buttons .link{
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,5 +112,4 @@ body{
     border-radius: 50%;
     background-color: #4070f4;
     text-decoration: none;
-    
 }
