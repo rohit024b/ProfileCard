@@ -16,54 +16,90 @@ body{
 }
 
 .profile-Card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
     max-width: 400px;
     width: 100%;
     border-radius: 24px;
     background: #fff;
+    /* background: #333; */
+    box-shadow: 0 3px 20px lightgray;
     padding: 25px;
-    box-shadow: 0 5px 10px lightgray;
+    margin: 56px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .image{
-    position: relative;
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: royalblue;
-    padding: 3px;
+    padding: 1px;
+    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
+    0 5px 20px 0  rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
-    
 }
 
 .image .profile-img{
-    height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 2px solid white;
 }
 
 .profile-Card .text-data{
     display: flex;  /*here we can also use grid to make it in column style */
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 55px;
+    /* color: #f4f4f4; */
+    
 
 }
 .text-data .name{
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 550;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* color: #f4f4f4; */
 }
 .text-data .job{
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 450;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* color: #f4f4f4; */
 }
-
+.text-data .sumarry{
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 150;
+    word-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .profile-Card .media-Buttons{
     display: flex;
     align-items: center;
+    padding-top: 15px;
 }
 
 .media-Buttons .link{
@@ -78,5 +114,5 @@ body{
     border-radius: 50%;
     background-color: #4070f4;
     text-decoration: none;
-
+    
 }
