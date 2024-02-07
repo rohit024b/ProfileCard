@@ -9,7 +9,9 @@
 }
 
 body{
-    background-image: linear-gradient(to right,  pink 0%, pink 50%, paleturquoise 50%, paleturquoise 100%);
+    background: linear-gradient(315deg,paleturquoise,pink );
+
+    /* background-image: linear-gradient(to right,  pink 0%, pink 50%, paleturquoise 50%, paleturquoise 100%); */
     background-color: #578489;
     /* background-blend-mode: ; */
     height: 100vh;
@@ -45,23 +47,69 @@ body{
     border-radius: 24px 24px 0 0 ;
 }
 
-
-.profile-Img{
+.box{
     position: relative;
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    /* background: darkblue; */
-    background: #578489;
-    padding: 3px;
+    background: rgb(88, 118, 118);
+    overflow: hidden;
+    /* border: solid white; */
+    /* background: linear-gradient(315deg,paleturquoise,pink ); */
+    /* padding: 3px; */
+}
+.box::before{
+    content: '';
+    position: absolute;
+    inset: -10px 50px;
+    background: linear-gradient(315deg,#35d7ff,#ff01ff );
+    transition: 0.5s;
+    animation: spin 4s linear infinite;
+}
+.box:hover::before{
+    inset: -20px 0px;
+}
+@keyframes spin {
+
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.box::after{
+    content: '';
+    position: absolute;
+    background:#578489;
+    inset: 4px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.profile-Img{
+    position: absolute;
+    /* height: 100%;
+    width: 100%; */
+    inset: 2px;
+    z-index: 3;
+    border-radius: 50%;
+    /* background: #578489; */
+    /* padding: 1px; */
+
 }
 
 .profile-Img .image{
+    position: absolute;
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    border: solid white;
+    border: transparent white;
+    /* border-right-color: blue;
+    animation: spin 1s ease infinite; */
 }
+
 
 .card .text-data{
     margin-top: 15px;
