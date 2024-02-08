@@ -9,8 +9,8 @@
 }
 
 body{
-    background: linear-gradient(315deg,paleturquoise,pink );
 
+    background: linear-gradient(315deg,paleturquoise,pink );
     /* background-image: linear-gradient(to right,  pink 0%, pink 50%, paleturquoise 50%, paleturquoise 100%); */
     background-color: #578489;
     /* background-blend-mode: ; */
@@ -41,8 +41,8 @@ body{
     position: absolute;
     height: 30%;
     width: 100%;
-    background-image: linear-gradient(to right, paleturquoise 0%, paleturquoise 50%,  pink 50%, pink 100%);
-    /* background-color: royalblue; */
+    /* background-image: linear-gradient(to right, paleturquoise 0%, paleturquoise 50%,  pink 50%, pink 100%); */
+    background-color: royalblue;
     top: 0;
     border-radius: 24px 24px 0 0 ;
 }
@@ -53,10 +53,12 @@ body{
     width: 150px;
     border-radius: 50%;
     background: rgb(88, 118, 118);
+    border: solid black;
     overflow: hidden;
+    box-shadow: 0 5px 15px gray;
     /* border: solid white; */
     /* background: linear-gradient(315deg,paleturquoise,pink ); */
-    /* padding: 3px; */
+    padding: 2px;
 }
 .box::before{
     content: '';
