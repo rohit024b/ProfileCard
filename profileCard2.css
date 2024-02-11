@@ -55,7 +55,7 @@ body{
     background: rgb(88, 118, 118);
     border: solid black;
     overflow: hidden;
-    box-shadow: 0 5px 15px gray;
+    box-shadow: 0 5px 15px gray ;
     /* border: solid white; */
     /* background: linear-gradient(315deg,paleturquoise,pink ); */
     padding: 2px;
@@ -124,16 +124,18 @@ body{
 }
 
 .text-data .job{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 450;
     letter-spacing: 3px;
 }
 
 .text-data .summary{
     margin-top: 10px;
+    margin-bottom: 10px;
+
     font-size: 14px;
     font-weight: 300;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     word-spacing: 1%;
 }
 
