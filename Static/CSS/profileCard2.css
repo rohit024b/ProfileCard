@@ -42,7 +42,8 @@ body{
     height: 30%;
     width: 100%;
     /* background-image: linear-gradient(to right, paleturquoise 0%, paleturquoise 50%,  pink 50%, pink 100%); */
-    background-color: royalblue;
+    /* background-color: royalblue; */
+    background: linear-gradient(315deg, #C33764 ,#1D2671 );
     top: 0;
     border-radius: 24px 24px 0 0 ;
 }
@@ -55,7 +56,7 @@ body{
     background: rgb(88, 118, 118);
     border: solid black;
     overflow: hidden;
-    box-shadow: 0 5px 15px gray ;
+    box-shadow: 0 5px 15px rgb(36, 34, 34) ;
     /* border: solid white; */
     /* background: linear-gradient(315deg,paleturquoise,pink ); */
     padding: 2px;
@@ -84,7 +85,7 @@ body{
 .box::after{
     content: '';
     position: absolute;
-    background:#578489;
+    background:#ffffff;
     inset: 4px;
     border-radius: 50%;
     z-index: 1;
@@ -97,6 +98,9 @@ body{
     inset: 2px;
     z-index: 3;
     border-radius: 50%;
+    overflow: hidden;
+    border: solid black;   
+
     /* background: #578489; */
     /* padding: 1px; */
 
@@ -107,7 +111,10 @@ body{
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    border: transparent white;
+    /* border: solid black;    */
+    object-fit:  contain;
+    transform: scale(1.08);
+    float: right inline-end;
     /* border-right-color: blue;
     animation: spin 1s ease infinite; */
 }
@@ -148,7 +155,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: royalblue;
+    /* background: royalblue; */
+    background: linear-gradient(315deg, #C33764 ,#1D2671 );
     height: 35px;
     width: 35px;
     margin: 0 10px;
