@@ -163,4 +163,11 @@ body{
     border-radius: 50%;
     color: #f4f4f4;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.social-contact .link:hover{
+    background: linear-gradient(315deg, #1D2671,#C33764 );
+    transform: scale(1.2) ;
+    transition: 0.5s ease-in-out ;
 }
